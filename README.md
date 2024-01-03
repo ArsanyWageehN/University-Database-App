@@ -1,6 +1,6 @@
 
 
-![alt text](https://github.com/ArsanyWageehN/University-Database-App/blob/master/Project/erd.jpg)
+![alt text](https://github.com/ArsanyWageehN/University-Database-App/blob/master/Project/erd.png)
 ![alt text](https://github.com/ArsanyWageehN/University-Database-App/blob/master/Project/1.jpg)
 ![alt text](https://github.com/ArsanyWageehN/University-Database-App/blob/master/Project/2.jpg)
 ![alt text](https://github.com/ArsanyWageehN/University-Database-App/blob/master/Project/3.jpg)
