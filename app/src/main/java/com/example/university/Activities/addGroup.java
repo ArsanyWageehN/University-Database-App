@@ -114,20 +114,17 @@ public class addGroup extends AppCompatActivity {
         spinner_faculty.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                if (position == 0) {
-                    Departments.clear();
-                    selectedFaculty = new FacultyData(0,"");
-                    selectedDep = new DepartmentData(0,0,"");
-                } else
-                {
-                    selectedFaculty = (FacultyData) parent.getSelectedItem();
+
                 Departments.clear();
-                    adapter_Dep = new ArrayAdapter<>(addGroup.this,
-                            android.R.layout.simple_spinner_item, Departments);
-                    adapter_Dep.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                    spinner_Department.setAdapter(adapter_Dep);
-
-
+                selectedFaculty = new FacultyData(0,"");
+                selectedDep = new DepartmentData(0,0,"");
+                selectedFaculty = (FacultyData) parent.getSelectedItem();
+                Departments.clear();
+                adapter_Dep = new ArrayAdapter<>(addGroup.this,
+                        android.R.layout.simple_spinner_item, Departments);
+                adapter_Dep.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                spinner_Department.setAdapter(adapter_Dep);
+                if (position != 0) {
                 StringRequest stringRequest = new StringRequest(Request.Method.POST, Constants.URL_getDepartments, new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -189,7 +186,7 @@ public class addGroup extends AppCompatActivity {
 
 
             }
-        }
+            }
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) {

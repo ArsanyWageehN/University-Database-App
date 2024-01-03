@@ -7,23 +7,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingTop="50dp"
     android:gravity="center"
-    android:background="@drawable/bgg"
-    tools:context=".Activities.Registeration">
+    android:background="@drawable/bgg" >
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/title_view"
-        android:layout_marginTop="-5dp">
+        android:layout_below="@+id/title_view" >
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="30dp"
             app:cardCornerRadius="30dp"
-            android:paddingBottom="200dp"
             app:cardElevation="20dp"
             android:background="@drawable/custom_edittext">
             <LinearLayout
@@ -34,54 +30,55 @@
                 android:padding="24dp">
 
 
-                <EditText
+
+                <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:id="@+id/ID_S"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Name"
+                    android:textStyle="bold"
                     android:background="@drawable/custom_edittext"
                     android:drawablePadding="8dp"
-                    android:hint=" ID of Student"
                     android:padding="8dp"
                     android:textColor="@color/black"
-                    android:digits="0123456789"
-                    android:inputType="phone"
                     android:textColorHighlight="@color/cardview_dark_background"
                     android:layout_marginTop="40dp"/>
 
-
-                <EditText
-                    android:id="@+id/ID_C"
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:layout_marginTop="40dp"
+                    android:id="@+id/id"
                     android:background="@drawable/custom_edittext"
                     android:drawablePadding="8dp"
-                    android:hint=" ID of Course"
                     android:digits="0123456789"
+                    android:textStyle="bold"
                     android:inputType="phone"
                     android:padding="8dp"
                     android:textColor="@color/black"
-                    android:textColorHighlight="@color/cardview_dark_background" />
+                    android:textColorHighlight="@color/cardview_dark_background"
+                    android:layout_marginTop="20dp"/>
 
-                <Button
+                <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:id="@+id/Register"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/desc"
+                    android:background="@drawable/custom_edittext"
                     android:drawablePadding="8dp"
                     android:padding="8dp"
-                    android:textColor="@color/white"
-                    android:textColorHighlight="@color/blue"
-                    android:layout_marginTop="20dp"
-                    android:text="Register"
-                    android:layout_margin="10dp"
-                    android:textSize="16sp"
-                    android:backgroundTint="@color/blue"
-                    app:cornerRadius = "20dp"/>
-
-
-
-
-
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/cardview_dark_background"
+                    android:layout_marginTop="20dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/credits"
+                    android:background="@drawable/custom_edittext"
+                    android:drawablePadding="8dp"
+                    android:padding="8dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/cardview_dark_background"
+                    android:layout_marginTop="20dp"/>
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>

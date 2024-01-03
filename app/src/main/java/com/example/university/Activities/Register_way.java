@@ -13,7 +13,7 @@ import com.example.university.R;
 
 public class Register_way extends AppCompatActivity {
 
-    CardView lecturer,addStudent;
+    CardView lecturer,addStudent,crs_TO_dep;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +38,14 @@ public class Register_way extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Register_way.this, Registeration_lecturer.class));
+            }
+        });
+
+        crs_TO_dep = (CardView) findViewById(R.id.crs_TO_dep);
+        crs_TO_dep.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Register_way.this, course_TO_dep.class));
             }
         });
     }

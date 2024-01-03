@@ -16,6 +16,30 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".Activities.StudentDetails"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.StudentsList"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.InstuctorDetails"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.InstructorsList"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.CourseDetails"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.DetailsCourse"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.CourseList"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.course_TO_dep"
+            android:exported="false" />
+        <activity
             android:name=".Activities.addClass"
             android:exported="false" />
         <activity

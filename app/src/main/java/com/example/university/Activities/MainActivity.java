@@ -29,7 +29,7 @@ import org.json.JSONObject;
 
 public class MainActivity extends AppCompatActivity {
 
-    CardView addStudent,addCourse,register,addFaculty,addDep,lecturer,addGroup,addPeriod,addClass;
+    CardView addStudent,addCourse,register,addFaculty,addDep,lecturer,addGroup,addPeriod,addClass,Courses,Instructors,students;
     ProgressDialog progressDialog;
 
     @Override
@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //startActivity(new Intent(MainActivity.this, Register_way.class));
+                startActivity(new Intent(MainActivity.this, Register_way.class));
             }
         });
 
@@ -118,6 +118,31 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, addClass.class));
             }
         });
+
+        Courses = (CardView) findViewById(R.id.Courses);
+        Courses.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, CourseList.class));
+            }
+        });
+
+        Instructors = (CardView) findViewById(R.id.Instructors);
+        Instructors.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, InstructorsList.class));
+            }
+        });
+
+        students = (CardView) findViewById(R.id.students);
+        students.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, StudentsList.class));
+            }
+        });
+
 
     }
 }
