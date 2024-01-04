@@ -3,7 +3,7 @@
 ![alt text](https://github.com/ArsanyWageehN/University-Database-App/blob/master/Project/erd.png)
 ![alt text](https://github.com/ArsanyWageehN/University-Database-App/blob/master/Project/IMG_20240103_235306967.jpeg)
 
-![alt text](https://github.com/ArsanyWageehN/University-Database-App/blob/master/Project/IMG_20240103_235310537.jpeg)
+![alt text](https://github.com/ArsanyWageehN/University-Database-App/blob/master/Project/IMG-20240104-WA0001.jpg)
 
 ![alt text](https://github.com/ArsanyWageehN/University-Database-App/blob/master/Project/1.jpg)
 
